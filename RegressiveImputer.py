@@ -127,12 +127,12 @@ class RegressiveImputer:
         x_broad = self.broad_scaler.fit_transform(x_broad_temp)  # fit broad scaler and transform
 
         # ## apply column wise data imputation ## #
-        all_columns = range(x_orig.shape[1])
+        all_columns = [x for x in range(x_orig.shape[1])]
         progress_iterator = 0
         for curr_col in all_columns:
             # ## track progress
             if progress_iterator % 500 == 0:
-                print progress_iterator, '\t', datetime.datetime.now()
+                print (progress_iterator, '\t', datetime.datetime.now())
             progress_iterator += 1
 
             # ## create ColumnTransform
@@ -158,7 +158,7 @@ class RegressiveImputer:
             # ## make sure there is at least one row with the missing curr_col filled in.
             if x_broad_training_x.shape[0] == 0:  # test for no training data
                 # transform maintins None defaults
-                print '***Warning: some columns are all nan. Please run get_clean_columns on the input matrix before passing into imputer.***'
+                print ('***Warning: some columns are all nan. Please run get_clean_columns on the input matrix before passing into imputer.***')
                 continue
 
             # ## select informative features ## #
@@ -192,14 +192,14 @@ class RegressiveImputer:
 
     def transform(self, x_orig):
         if self.number_columns_in != x_orig.shape[1]:
-            print "***Warning - column dimentions do not match. Returning original.***"
+            print ("***Warning - column dimentions do not match. Returning original.***")
             return x_orig
         
         x_broad_temp = self.broad_imputer.transform(x_orig)  # fit broad imputer and transform
         x_broad = self.broad_scaler.transform(x_broad_temp)  # fit broad scaler and transform
 
         # ## apply column wise data imputation ## #
-        all_columns = range(x_orig.shape[1])
+        all_columns = [x for x in range(x_orig.shape[1])]
         for col_idx, curr_col in enumerate(all_columns):
             # load column transform 
             curr_col_transform = pickle.load(open(self.column_transform_dir + self.column_transform_filenames[col_idx], 'rb'))
@@ -224,8 +224,8 @@ class RegressiveImputer:
         self.fit(x_orig)
         return self.transform(x_orig)
 
-    def tansform_column_names(self, names):
+    def transform_column_names(self, names):
         if self.number_columns_in != len(names):
-            print "***Warning - column dimentions do not match. Returning original names***"
+            print ("***Warning - column dimentions do not match. Returning original names***")
             return names
         return names[self.keep_columns]

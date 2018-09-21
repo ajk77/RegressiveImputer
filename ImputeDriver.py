@@ -1,7 +1,7 @@
 """
 ImputeDriver.py
 package RegressiveImputer
-version 1.1
+version 2.0
 created by AndrewJKing.com|@andrewsjourney
 
 This program demonstrates how to run RegressiveImputer.
@@ -9,6 +9,23 @@ This program demonstrates how to run RegressiveImputer.
 It also demonstrates code for splitting the data into five folds.  
 
 To run, you will need to replace '/my_base_dir/' in __main__.
+
+
+---LICENSE---
+This file is part of RegressiveImputer.
+
+RegressiveImputer is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or 
+any later version.
+
+RegressiveImputer is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 from RegressiveImputer import RegressiveImputer, get_clean_columns

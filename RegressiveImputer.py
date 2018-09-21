@@ -1,7 +1,7 @@
 """
 RegressiveImputer.py
 package regressive_imputer
-version 1.0
+version 2.0
 created by AndrewJKing.com|@andrewsjourney
 
 Pass in:
@@ -15,6 +15,22 @@ Processes:
 Return:
     A numpy array where missing values have been imputed
     A second (test) where the same imputations have been performed
+
+---LICENSE---
+This file is part of RegressiveImputer.
+
+RegressiveImputer is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or 
+any later version.
+
+RegressiveImputer is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 import numpy as np

@@ -18,9 +18,9 @@ Version 2.0. For the versions available, see https://github.com/ajk77/Regressive
 
 ## Authors
 
-Andrew J King - Doctoral Candidate<br />
-Shyam Visweswaran - PI<br />
-Gregory F Cooper - Doctoral Advisor 
+Andrew J King - Doctoral Candidate (at time of creation)<br />
+Shyam Visweswaran - Principal Investigator<br />
+Gregory F Cooper - Doctoral Advisor
 
 ## License
 

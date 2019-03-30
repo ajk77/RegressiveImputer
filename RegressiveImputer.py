@@ -1,7 +1,7 @@
 """
 RegressiveImputer.py
-package regressive_imputer
-version 2.0
+package github.com/ajk77/RegressiveImputer
+version 2.1
 created by AndrewJKing.com|@andrewsjourney
 
 Pass in:
@@ -30,7 +30,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
+along with RegressiveImputer.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 import numpy as np

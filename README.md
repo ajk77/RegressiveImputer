@@ -14,7 +14,7 @@ Run ImputeDriver.py.<br />
 
 ## Versioning
 
-Version 2.0. For the versions available, see https://github.com/ajk77/RegressiveImputer
+Version 2.1. For the versions available, see https://github.com/ajk77/RegressiveImputer
 
 ## Authors
 

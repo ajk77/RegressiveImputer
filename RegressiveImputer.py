@@ -189,7 +189,7 @@ class RegressiveImputer:
 
             # determine if target attribute is binary
             if determine_if_binary(x_orig[:, curr_col]):
-                col_imputer = LogisticRegression(penalty='l2', random_state=42)
+                col_imputer = LogisticRegression(penalty='l2', random_state=42, solver='liblinear')
             else:
                 col_imputer = LinearRegression()
             
